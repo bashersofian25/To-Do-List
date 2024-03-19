@@ -1,0 +1,1 @@
+// function that takes a list Item as an input and builds it into dom elements

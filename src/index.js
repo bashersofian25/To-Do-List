@@ -10,7 +10,6 @@ import { weeklyPage } from './Pages/weeklyPage';
 import { addingPage } from './Pages/addingPage';
 
 
-
 const loadStorage = () => {
     try{
         loadDaily();

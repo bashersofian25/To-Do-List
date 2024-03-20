@@ -6,12 +6,33 @@
     <title>toprefecdo</title>
 <script defer src="main.bundle.js"></script></head>
 <body>
+    <dialog class="dialog">
+        <form>
+            <ul class="dialog-list">
+                <li class="text-field">
+                    <label for="task">Task</label>
+                    <input type="text" id="task" name="taskName">
+                </li>
+                <li class="text-field">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="taskDescription">
+                </li>
+                <li class="radio">
+
+                </li>
+
+
+            </ul>
+            <button type="submit" id="confirm">Confirm</button>
+            <button id="cancel">Cancel</button>
+        </form>
+    </dialog>
     <header id="header">
         <h1> perfect to do listing!</h1>
 
     </header>
     <nav id="side-bar">
-        <img src="./assets/logo.png">
+        <img id="logo">
         <ul id="nav">
             <li><button>Monthly</button></li>
             <li><button>Weekly</button></li>

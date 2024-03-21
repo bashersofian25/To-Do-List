@@ -2,7 +2,11 @@ export let dailyList = [];
 
 
 export const loadDaily = () => {
-    dailyList = JSON.parse(localStorage.getItem("dailyList"));
+    const local = localStorage.getItem("dailyList");
+    if(local != null){
+        dailyList = JSON.parse(local);
+    }
+    
 };
 
 export const appendToDailyList = (item) => {

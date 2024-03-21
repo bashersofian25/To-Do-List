@@ -4,7 +4,10 @@ export const appendToMonthlyList = (item) => {
     monthlyList.push(item);
 };
 export const loadMonthly = () => {
-    monthlyList = JSON.parse(localStorage.getItem("monthlyList"));
+    const local = localStorage.getItem("monthlyList");
+    if(local != null){
+        monthlyList = JSON.parse(local);
+    }
 };
 
 export const deleteFromMonthly = (id) => {

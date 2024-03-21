@@ -4,7 +4,10 @@ export const appendToWeeklyList = (item) => {
     weeklyList.push(item);
 };
 export const loadWeekly = () => {
-    weeklyList = JSON.parse(localStorage.getItem("weeklyList"));
+    const local = localStorage.getItem("weeklyList");
+    if(local != null){
+        weeklyList = JSON.parse(local);
+    }
 };
 
 export const deleteFromWeekly = (id) => {
